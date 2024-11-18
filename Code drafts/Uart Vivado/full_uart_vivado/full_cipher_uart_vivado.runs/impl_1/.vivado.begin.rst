@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Leor Brenner" Host="LEOR-PC-5530" Pid="27340" HostCore="16" HostMemory="016849256448">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Leor Brenner" Host="LEOR-PC-5530" Pid="1524" HostCore="16" HostMemory="016849256448">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Leor Brenner" Host="LEOR-PC-5530" Pid="3528" HostCore="16" HostMemory="016849256448">
+    </Process>
+</ProcessHandle>

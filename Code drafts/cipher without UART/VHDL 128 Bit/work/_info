@@ -1,0 +1,258 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/USER/Documents/Leor Brenner/VsCode files/Final_Project/VHDL Code
+Parray_signal_pkg_128
+Z0 DPx4 ieee 20 numeric_std_unsigned 0 22 L9z`>=>LNY9h8oAIomUKm3
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 266
+w1707924003
+Z5 dC:/Users/USER/Documents/Leor Brenner/VsCode files/Final_Project/VHDL 128 Bit
+8array_signal_pkg_128.vhd
+Farray_signal_pkg_128.vhd
+l0
+L5 1
+VJ^XDODdYcR<8K<93eHT:B1
+!s100 <0TkaRf46cf`hfEo]j7_03
+Z6 OV;C;2020.1;71
+32
+Z7 !s110 1707930261
+!i10b 1
+Z8 !s108 1707930261.000000
+!s90 -reportprogress|300|array_signal_pkg_128.vhd|
+!s107 array_signal_pkg_128.vhd|
+!i113 1
+Z9 tExplicit 1 CvgOpt 0
+Ekey_schedule_generator_128
+Z10 w1707928317
+R0
+Z11 DPx4 work 20 array_signal_pkg_128 0 22 J^XDODdYcR<8K<93eHT:B1
+R1
+R2
+R3
+R4
+!i122 269
+R5
+Z12 8key_schedule_generator_128.vhd
+Z13 Fkey_schedule_generator_128.vhd
+l0
+L7 1
+V=C]fQ17EbdnT^j5^]3;SW1
+!s100 c?[mmO^gc1To?2dzlWb^11
+R6
+32
+R7
+!i10b 1
+R8
+Z14 !s90 -reportprogress|300|key_schedule_generator_128.vhd|
+Z15 !s107 key_schedule_generator_128.vhd|
+!i113 1
+R9
+Akey_schedule_generator_128_arc
+R0
+R11
+R1
+R2
+R3
+R4
+DEx4 work 26 key_schedule_generator_128 0 22 =C]fQ17EbdnT^j5^]3;SW1
+!i122 269
+l35
+L17 648
+V]7AF7QB8K1X4G0AH7FCcD1
+!s100 kW30I>OB>TP><8aW@7N740
+R6
+32
+R7
+!i10b 1
+R8
+R14
+R15
+!i113 1
+R9
+Eround_128
+Z16 w1707927760
+R1
+R2
+R3
+R4
+!i122 267
+R5
+Z17 8round_128.vhd
+Z18 Fround_128.vhd
+l0
+L6 1
+VL=`mmO511d5MPCY9BhoYQ2
+!s100 [GAC65oh6`5TKU3j6azOo3
+R6
+32
+R7
+!i10b 1
+R8
+Z19 !s90 -reportprogress|300|round_128.vhd|
+Z20 !s107 round_128.vhd|
+!i113 1
+R9
+Around_128_arc
+R1
+R2
+R3
+R4
+DEx4 work 9 round_128 0 22 L=`mmO511d5MPCY9BhoYQ2
+!i122 267
+l20
+L19 15
+V7c:3Vi6AjSOl@XfSUKM^03
+!s100 GEHGXNUkmWAII<ngTSli43
+R6
+32
+R7
+!i10b 1
+R8
+R19
+R20
+!i113 1
+R9
+Esimon_cipher_hierarchy_128
+Z21 w1707929557
+R0
+R11
+R1
+R2
+R3
+R4
+!i122 270
+R5
+Z22 8Simon_Cipher_Hierarchy_128.vhd
+Z23 FSimon_Cipher_Hierarchy_128.vhd
+l0
+L8 1
+VB;?c8h3c]^^cl9l@aNK@Y0
+!s100 =l0j];1dYAIC01@:FXRVL3
+R6
+32
+R7
+!i10b 1
+R8
+Z24 !s90 -reportprogress|300|Simon_Cipher_Hierarchy_128.vhd|
+Z25 !s107 Simon_Cipher_Hierarchy_128.vhd|
+!i113 1
+R9
+Asimon_cipher_hierarchy_128_arc
+R0
+R11
+R1
+R2
+R3
+R4
+DEx4 work 26 simon_cipher_hierarchy_128 0 22 B;?c8h3c]^^cl9l@aNK@Y0
+!i122 270
+l56
+L21 736
+VN`:[eKSRK86F7AB1Fakl=2
+!s100 5G]gelVV7]H[4ick1[4IQ0
+R6
+32
+R7
+!i10b 1
+R8
+R24
+R25
+!i113 1
+R9
+Esimon_cipher_hierarchy_128_tb
+Z26 w1707929158
+R1
+R2
+R3
+R4
+!i122 271
+R5
+Z27 8Simon_Cipher_Hierarchy_128_tb.vhd
+Z28 FSimon_Cipher_Hierarchy_128_tb.vhd
+l0
+L6 1
+V3`3K;21n`BJo0ZGkIChjg0
+!s100 ^Z7`8b=zzM<k^gaEU1gHf0
+R6
+32
+R7
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|Simon_Cipher_Hierarchy_128_tb.vhd|
+Z30 !s107 Simon_Cipher_Hierarchy_128_tb.vhd|
+!i113 1
+R9
+Asimon_cipher_hierarchy_128_tb_arc
+R1
+R2
+R3
+R4
+Z31 DEx4 work 29 simon_cipher_hierarchy_128_tb 0 22 3`3K;21n`BJo0ZGkIChjg0
+!i122 271
+l30
+Z32 L9 75
+Z33 VmfOEXG?glRFC5C;LgIC[]0
+Z34 !s100 TWNgi>]j1TP>HbnGP5bWR2
+R6
+32
+R7
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R9
+Esub_key_generator_128
+Z35 w1707930256
+R1
+R2
+R3
+R4
+!i122 268
+R5
+Z36 8sub_key_generator_128.vhd
+Z37 Fsub_key_generator_128.vhd
+l0
+L6 1
+V`Weh6BdDg9FaoklT6`E7l2
+!s100 [PhkdWoJ5WYD`_o;YNVDf2
+R6
+32
+R7
+!i10b 1
+R8
+Z38 !s90 -reportprogress|300|sub_key_generator_128.vhd|
+Z39 !s107 sub_key_generator_128.vhd|
+!i113 1
+R9
+Asub_key_generator_128_arc
+R1
+R2
+R3
+R4
+DEx4 work 21 sub_key_generator_128 0 22 `Weh6BdDg9FaoklT6`E7l2
+!i122 268
+l24
+L19 18
+V=2`cd7ChCT]bdR]9bjGYf3
+!s100 lLJID883<7b3TAO^VTgld0
+R6
+32
+R7
+!i10b 1
+R8
+R38
+R39
+!i113 1
+R9

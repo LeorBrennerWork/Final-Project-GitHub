@@ -1,0 +1,560 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Oct 30 18:17:44 2024
+# Process ID: 33696
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34324 C:\Users\USER\Documents\Leor Brenner\Final_Project\VHDL Final\full_encrypt_decrypt_vivado\full_encrypt_decrypt_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:09 . Memory (MB): peak = 1905.445 ; gain = 275.578
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1957.281 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2061.996 ; gain = 1.887
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.318 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.521 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.529 . Memory (MB): peak = 2666.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2666.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2801.781 ; gain = 896.336
+report_utilization -hierarchical
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 18:28:21 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       2570 |       2570 |       0 |    0 | 7537 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |       1205 |       1205 |       0 |    0 | 3498 |      0 |      0 |          0 |
+|     (decrypt)                        | simon_cipher_hierarchy_decrypt |         37 |         37 |       0 |    0 | 1066 |      0 |      0 |          0 |
+|     key_schedule_create              |      key_schedule_generator_58 |        672 |        672 |       0 |    0 | 1408 |      0 |      0 |          0 |
+|       (key_schedule_create)          |      key_schedule_generator_58 |          0 |          0 |       0 |    0 |  512 |      0 |      0 |          0 |
+|       sub_key_generator_10           |           sub_key_generator_91 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_11           |           sub_key_generator_92 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_12           |           sub_key_generator_93 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_13           |           sub_key_generator_94 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_14           |           sub_key_generator_95 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_15           |           sub_key_generator_96 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_16           |           sub_key_generator_97 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_17           |           sub_key_generator_98 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_18           |           sub_key_generator_99 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_19           |          sub_key_generator_100 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_20           |          sub_key_generator_101 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_21           |          sub_key_generator_102 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_22           |          sub_key_generator_103 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_23           |          sub_key_generator_104 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_24           |          sub_key_generator_105 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_25           |          sub_key_generator_106 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_26           |          sub_key_generator_107 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_27           |          sub_key_generator_108 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_28           |          sub_key_generator_109 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_29           |          sub_key_generator_110 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_30           |          sub_key_generator_111 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_31           |          sub_key_generator_112 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_4            |          sub_key_generator_113 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_5            |          sub_key_generator_114 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_6            |          sub_key_generator_115 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_7            |          sub_key_generator_116 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_8            |          sub_key_generator_117 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_9            |          sub_key_generator_118 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                       round_59 |          0 |          0 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                       round_60 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                       round_61 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                       round_62 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                       round_63 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                       round_64 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                       round_65 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                       round_66 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                       round_67 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                       round_68 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                       round_69 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_70 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_71 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_72 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_73 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_74 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_75 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_76 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_77 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_78 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_79 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_80 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_81 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_82 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_83 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_84 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_85 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_86 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_87 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_88 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_89 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_90 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1269 |       1269 |       0 |    0 | 3689 |      0 |      0 |          0 |
+|     (encrypt)                        | simon_cipher_hierarchy_encrypt |         69 |         69 |       0 |    0 | 1193 |      0 |      0 |          0 |
+|     key_schedule_create              |         key_schedule_generator |        688 |        688 |       0 |    0 | 1472 |      0 |      0 |          0 |
+|       (key_schedule_create)          |         key_schedule_generator |         16 |         16 |       0 |    0 |  576 |      0 |      0 |          0 |
+|       sub_key_generator_10           |              sub_key_generator |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_11           |           sub_key_generator_31 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_12           |           sub_key_generator_32 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_13           |           sub_key_generator_33 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_14           |           sub_key_generator_34 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_15           |           sub_key_generator_35 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_16           |           sub_key_generator_36 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_17           |           sub_key_generator_37 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_18           |           sub_key_generator_38 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_19           |           sub_key_generator_39 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_20           |           sub_key_generator_40 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_21           |           sub_key_generator_41 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_22           |           sub_key_generator_42 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_23           |           sub_key_generator_43 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_24           |           sub_key_generator_44 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_25           |           sub_key_generator_45 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_26           |           sub_key_generator_46 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_27           |           sub_key_generator_47 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_28           |           sub_key_generator_48 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_29           |           sub_key_generator_49 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_30           |           sub_key_generator_50 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_31           |           sub_key_generator_51 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_4            |           sub_key_generator_52 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_5            |           sub_key_generator_53 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_6            |           sub_key_generator_54 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_7            |           sub_key_generator_55 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_8            |           sub_key_generator_56 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_9            |           sub_key_generator_57 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                          round |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                        round_0 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                        round_1 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                        round_2 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                        round_3 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                        round_4 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                        round_5 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                        round_6 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                        round_7 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                        round_8 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                        round_9 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_10 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_11 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_12 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_13 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_14 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_15 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_16 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_17 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_18 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_19 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_20 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_21 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_22 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_23 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_24 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_25 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_26 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_27 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_28 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_29 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_30 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |         50 |         50 |       0 |    0 |  234 |      0 |      0 |          0 |
+|     (full_rxd_do)                    |                       get_data |         13 |         13 |       0 |    0 |  201 |      0 |      0 |          0 |
+|     rxd_do                           |                       uart_rxd |         37 |         37 |       0 |    0 |   33 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |         36 |         36 |       0 |    0 |   48 |      0 |      0 |          0 |
+|     (full_txd_do)                    |                      send_data |         20 |         20 |       0 |    0 |   15 |      0 |      0 |          0 |
+|     txd_do                           |               uart_txd_combine |         16 |         16 |       0 |    0 |   33 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: simon_cipher_top_encrypt_decrypt
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28640
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3491.586 ; gain = 425.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'simon_cipher_top_encrypt_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:16]
+INFO: [Synth 8-3491] module 'get_data' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/get_data.vhd:5' bound to instance 'full_rxd_do' of component 'get_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'get_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/get_data.vhd:16]
+INFO: [Synth 8-3491] module 'uart_rxd' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_rxd_combine.vhd:5' bound to instance 'rxd_do' of component 'uart_rxd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/get_data.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'uart_rxd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_rxd_combine.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'uart_rxd' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_rxd_combine.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'get_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/get_data.vhd:16]
+INFO: [Synth 8-3491] module 'send_data' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/send_data.vhd:6' bound to instance 'full_txd_do' of component 'send_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'send_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/send_data.vhd:17]
+INFO: [Synth 8-3491] module 'uart_txd_combine' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_txd_combine.vhd:6' bound to instance 'txd_do' of component 'uart_txd_combine' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/send_data.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'uart_txd_combine' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_txd_combine.vhd:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_txd_combine.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'uart_txd_combine' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/uart_txd_combine.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'send_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/send_data.vhd:17]
+INFO: [Synth 8-3491] module 'simon_cipher_hierarchy_encrypt' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:8' bound to instance 'encrypt' of component 'simon_cipher_hierarchy_encrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'simon_cipher_hierarchy_encrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:23]
+INFO: [Synth 8-3491] module 'key_schedule_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:7' bound to instance 'key_schedule_create' of component 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:17]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_4' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'sub_key_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:19]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_5' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:86]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_6' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:95]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_7' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:104]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_8' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:113]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_9' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:122]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_10' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:131]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_11' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:140]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_12' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:149]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_13' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:158]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_14' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:167]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_15' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:176]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_16' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:185]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_17' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:194]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_18' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:203]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_19' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:212]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_20' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:221]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_21' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:230]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_22' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:239]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_23' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:248]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_24' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:257]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_25' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:266]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_26' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:275]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_27' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:284]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_28' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:293]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_29' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:302]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_30' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:311]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_31' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:320]
+INFO: [Synth 8-256] done synthesizing module 'key_schedule_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:17]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_1' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'round' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:19]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_2' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:178]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_3' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:187]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_4' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:196]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_5' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:205]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_6' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:214]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_7' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:223]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_8' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:232]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_9' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:241]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_10' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:250]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_11' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:259]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_12' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:268]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_13' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:277]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_14' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:286]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_15' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:295]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_16' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:304]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_17' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:313]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_18' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:322]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_19' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:331]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_20' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:340]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_21' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:349]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_22' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:358]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_23' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:367]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_24' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:376]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_25' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:385]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_26' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:394]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_27' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:403]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_28' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:412]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_29' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:421]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_30' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:430]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_31' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:439]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_32' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:448]
+INFO: [Synth 8-256] done synthesizing module 'simon_cipher_hierarchy_encrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:23]
+INFO: [Synth 8-3491] module 'simon_cipher_hierarchy_decrypt' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:8' bound to instance 'decrypt' of component 'simon_cipher_hierarchy_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'simon_cipher_hierarchy_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:23]
+INFO: [Synth 8-3491] module 'key_schedule_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:7' bound to instance 'key_schedule_create' of component 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:162]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_1' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:169]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_2' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:178]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_3' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:187]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_4' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:196]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_5' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:205]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_6' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:214]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_7' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:223]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_8' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:232]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_9' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:241]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_10' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:250]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_11' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:259]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_12' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:268]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_13' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:277]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_14' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:286]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_15' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:295]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_16' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:304]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_17' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:313]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_18' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:322]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_19' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:331]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_20' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:340]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_21' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:349]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_22' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:358]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_23' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:367]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_24' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:376]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_25' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:385]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_26' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:394]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_27' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:403]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_28' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:412]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_29' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:421]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_30' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:430]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_31' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:439]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_32' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:448]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'simon_cipher_hierarchy_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'seven_segment' [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/seven_segment.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/seven_segment.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/seven_segment.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'simon_cipher_top_encrypt_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:16]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[0] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[1] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[2] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[3] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[4] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[5] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[6] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[7] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[8] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[9] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[10] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[11] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[12] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[13] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[14] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[15] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[16] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[17] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[18] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[19] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[20] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[21] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[22] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[23] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[24] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[25] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[26] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[27] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[28] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[29] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[30] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element load_plntxt_internal_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:142]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3609.820 ; gain = 543.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3627.746 ; gain = 561.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3627.746 ; gain = 561.801
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 3627.746 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/full_cipher_uart.xdc]
+Finished Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt/full_cipher_uart.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3740.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3758.840 ; gain = 692.895
+130 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3758.840 ; gain = 692.895
+write_schematic -format pdf -orientation landscape C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.xpr/schematic.pdf
+ERROR: [Common 17-165] Too many positional options when parsing 'Final/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.xpr/schematic.pdf', please type 'write_schematic -help' for usage info.
+write_schematic -format pdf -orientation portrait C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/schematic.pdf
+ERROR: [Common 17-165] Too many positional options when parsing 'Final/full_encrypt_decrypt_vivado/schematic.pdf', please type 'write_schematic -help' for usage info.
+write_schematic C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/schematic.sch
+ERROR: [Common 17-165] Too many positional options when parsing 'Final/full_encrypt_decrypt_vivado/schematic.sch', please type 'write_schematic -help' for usage info.
+write_schematic -format pdf -orientation landscape -scope visible C:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Final/full_encrypt_decrypt_vivado/schematic.pdf
+ERROR: [Common 17-165] Too many positional options when parsing 'Final/full_encrypt_decrypt_vivado/schematic.pdf', please type 'write_schematic -help' for usage info.
+write_schematic -help
+write_schematic
+
+Description: 
+Export schematic 
+
+Syntax: 
+write_schematic  [-force] [-format <arg>] [-orientation <arg>] [-scope <arg>]
+                 [-name <arg>] [-quiet] [-verbose] <file>
+
+Returns: 
+name of the output file
+
+Usage: 
+  Name            Description
+  ---------------------------
+  [-force]        Overwrite existing file
+  [-format]       Values: native or pdf. read_schematic can be used to view 
+                  native format.
+                  Default: native
+  [-orientation]  Values: landscape or portrait
+  [-scope]        Values: current_page, visible or all
+                  Default: current_page
+  [-name]         Schematic window title
+  [-quiet]        Ignore command errors
+  [-verbose]      Suspend message limits during command execution
+  <file>          Output file
+
+Categories: 
+FileIO
+
+Description:
+
+  Output the currently opened, or specified Schematic window in the Vivado
+  IDE to a file.
+
+  The file can be written as a native ASCII file that can be read back into
+  the Vivado IDE using the read_schematic command, or can be written as a PDF
+  or SVG file for use outside of the Vivado Design Suite. This can be useful
+  when documenting IP cores from the IP packager flow, or from the Vivado IP
+  integrator.
+
+Arguments:
+
+  -force - (Optional) Overwrite the specified Schematic file if it already
+  exists.
+
+  -format [ native | pdf | svg ] - (Optional) Write the output file in the
+  specified format. The default file format is native to the Vivado Design
+  Suite, that can be read back into the tool using the read_schematic
+  command. SVG is scalable vector graphics format. PDF is portable document
+  format.
+
+  Note: The -format argument is case sensitive.
+
+  -orientation [ landscape | portrait ] - (Optional) Write the schematic in a
+  vertical (portrait) or horizontal (landscape) orientation. The default is
+  portrait.
+
+  -scope [ current_page | visible | all ] - (Optional) Write the current page
+  of the schematic, or the visible content displayed in the schematic window,
+  or all of the schematic. The default is current_page.
+
+  -name <arg> - (Optional) Specifies the name of the open Schematic window to
+  write. Use this option to write the specified schematic window when more
+  than one schematic window is opened.
+
+  Note: When multiple schematic windows are opened, the first opened window
+  is written if -name is not specified.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <file> - (Required) The path and filename of the Schematic file to write.
+  The path is optional, but if one is not provided the Schematic file will be
+  written to the current working directory, or the directory from which the
+  Vivado tool was launched.
+
+Example:
+
+  The following example writes the specified Schematic window, displayed in
+  the Vivado IDE, to a native format file that can later be read back into
+  the Vivado Design Suite, overwriting the specified file if it already
+  exists:
+
+    write_schematic -name Schematic C:/Data/mySchematic.txt -force 
+    
+
+  The following example writes a PDF file with a horizontal view of the
+  specified schematic window:
+
+    write_schematic -format pdf -name "Schematic (2)" C:/Data/mySchematic.pdf \  
+    -orientation landscape 
+    
+
+See Also:
+
+   *  read_schematic
+   *  write_bd_layout
+write_schematic -format pdf -orientation landscape C:/Users/USER/Documents/schematic.pdf
+C:/Users/USER/Documents/schematic.pdf
+write_schematic -format pdf -orientation portrait C:/Users/USER/Documents/schematic.pdf
+C:/Users/USER/Documents/schematic.pdf
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 23:55:40 2024...

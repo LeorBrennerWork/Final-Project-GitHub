@@ -1,0 +1,359 @@
+
+*** Running vivado
+    with args -log simon_cipher_top_encrypt_decrypt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source simon_cipher_top_encrypt_decrypt.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source simon_cipher_top_encrypt_decrypt.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 567.031 ; gain = 183.859
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/verilog_full_cipher_vivado.srcs/utils_1/imports/synth_1/simon_cipher_top_encrypt_decrypt.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/verilog_full_cipher_vivado.srcs/utils_1/imports/synth_1/simon_cipher_top_encrypt_decrypt.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top simon_cipher_top_encrypt_decrypt -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 52540
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1401.203 ; gain = 440.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'simon_cipher_top_encrypt_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/simon_cipher_top_encrypt_decrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'get_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/get_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_rxd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/uart_rxd_combine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rxd' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/uart_rxd_combine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'get_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/get_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'send_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/send_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_txd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/uart_txd_combine.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/uart_txd_combine.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'uart_txd' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/uart_txd_combine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'send_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/send_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'simon_cipher_hierarchy_encrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/Simon_Cipher_Hierarchy_Encrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/sub_key_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sub_key_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/sub_key_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'key_schedule_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/round.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'round' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/round.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'simon_cipher_hierarchy_encrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/Simon_Cipher_Hierarchy_Encrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'simon_cipher_hierarchy_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/Simon_Cipher_Hierarchy_Decrypt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'simon_cipher_hierarchy_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/Simon_Cipher_Hierarchy_Decrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/seven_segment.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/seven_segment.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/seven_segment.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'simon_cipher_top_encrypt_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/simon_cipher_top_encrypt_decrypt.v:3]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_0_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:87]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_1_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:88]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_2_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:89]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_3_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:90]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_4_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:91]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_5_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:92]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_6_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:93]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_7_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:94]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_8_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:95]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_9_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:96]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_10_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:97]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_11_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:98]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_12_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:99]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_13_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:100]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_14_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:101]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_15_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:102]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_16_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:103]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_17_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:104]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_18_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:105]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_19_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:106]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_20_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:107]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_21_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:108]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_22_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:109]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_23_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:110]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_24_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:111]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_25_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:112]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_26_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:113]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_27_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:114]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_28_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:115]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_29_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:116]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_30_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/key_schedule_generator.v:117]
+WARNING: [Synth 8-6014] Unused sequential element load_plntxt_internal_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/simon_cipher_top_encrypt_decrypt.v:69]
+WARNING: [Synth 8-7129] Port z_counter[31] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[30] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[29] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[28] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[27] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[26] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[25] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[24] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[23] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[22] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[21] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[20] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[19] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[18] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[17] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[16] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[15] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[14] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[13] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[12] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[11] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[10] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[9] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[8] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[7] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[6] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[5] in module sub_key_generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1520.000 ; gain = 559.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1520.000 ; gain = 559.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1520.000 ; gain = 559.086
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.236 . Memory (MB): peak = 1520.000 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/full_cipher_uart.xdc]
+Finished Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/full_cipher_uart.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Full Cipher/full_cipher_uart.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/simon_cipher_top_encrypt_decrypt_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/simon_cipher_top_encrypt_decrypt_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1582.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1582.027 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'my_rxd_state_machine_reg' in module 'uart_rxd'
+INFO: [Synth 8-802] inferred FSM for state register 'my_txd_state_machine_reg' in module 'uart_txd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                   START |                              001 |                              001
+                 RECEIVE |                              010 |                              010
+               FINISH_RX |                              011 |                              011
+                  RDY_TX |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'my_rxd_state_machine_reg' using encoding 'sequential' in module 'uart_rxd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                   START |                             0010 |                               01
+                TRANSMIT |                             0100 |                               10
+                  FINISH |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'my_txd_state_machine_reg' using encoding 'one-hot' in module 'uart_txd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 56    
+	   5 Input     16 Bit         XORs := 56    
+	   4 Input     16 Bit         XORs := 64    
++---Registers : 
+	              104 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 20    
+	               16 Bit    Registers := 436   
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input  104 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   5 Input    8 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 25    
+	   5 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    64|
+|3     |LUT1   |     7|
+|4     |LUT2   |   580|
+|5     |LUT3   |   493|
+|6     |LUT4   |    33|
+|7     |LUT5   |  1113|
+|8     |LUT6   |   103|
+|9     |FDRE   |  6081|
+|10    |FDSE   |     1|
+|11    |IBUF   |     3|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.027 ; gain = 621.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 1582.027 ; gain = 559.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1582.027 ; gain = 621.113
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1582.027 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1582.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 401dc734
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 1582.027 ; gain = 1011.023
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1582.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/verilog_full_cipher_vivado.runs/synth_1/simon_cipher_top_encrypt_decrypt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file simon_cipher_top_encrypt_decrypt_utilization_synth.rpt -pb simon_cipher_top_encrypt_decrypt_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 24 04:55:52 2024...

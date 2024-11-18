@@ -1,0 +1,219 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Nov 13 22:54:02 2024
+# Process ID: 49320
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent38264 C:\Users\USER\Documents\Leor Brenner\Final_Project\Verilog Final\verilog_full_cipher_vivado\verilog_full_cipher_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/verilog_full_cipher_vivado.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/verilog_full_cipher_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1583.910 ; gain = 357.047
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1962.598 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2064.684 ; gain = 1.824
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.237 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 2667.926 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2667.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2815.426 ; gain = 1203.062
+write_schematic -format pdf -orientation portrait C:/Users/USER/Documents/schematic.pdf
+C:/Users/USER/Documents/schematic.pdf
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: simon_cipher_top_encrypt_decrypt
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 55548
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2972.566 ; gain = 79.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'simon_cipher_top_encrypt_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/simon_cipher_top_encrypt_decrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'get_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/get_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_rxd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/uart_rxd_combine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rxd' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/uart_rxd_combine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'get_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/get_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'send_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/send_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'uart_txd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/uart_txd_combine.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/uart_txd_combine.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'uart_txd' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/uart_txd_combine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'send_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/send_data.v:3]
+INFO: [Synth 8-6157] synthesizing module 'simon_cipher_hierarchy_encrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/Simon_Cipher_Hierarchy_Encrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/sub_key_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sub_key_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/sub_key_generator.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'key_schedule_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:3]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/round.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'round' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/round.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'simon_cipher_hierarchy_encrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/Simon_Cipher_Hierarchy_Encrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'simon_cipher_hierarchy_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/Simon_Cipher_Hierarchy_Decrypt.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'simon_cipher_hierarchy_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/Simon_Cipher_Hierarchy_Decrypt.v:3]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment' [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/seven_segment.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/seven_segment.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/seven_segment.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'simon_cipher_top_encrypt_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/simon_cipher_top_encrypt_decrypt.v:3]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_0_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:87]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_1_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:88]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_2_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:89]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_3_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:90]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_4_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:91]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_5_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:92]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_6_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:93]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_7_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:94]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_8_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:95]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_9_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:96]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_10_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:97]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_11_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:98]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_12_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:99]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_13_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:100]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_14_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:101]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_15_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:102]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_16_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:103]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_17_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:104]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_18_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:105]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_19_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:106]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_20_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:107]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_21_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:108]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_22_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:109]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_23_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:110]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_24_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:111]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_25_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:112]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_26_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:113]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_27_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:114]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_28_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:115]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_29_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:116]
+WARNING: [Synth 8-6014] Unused sequential element key_schdl_30_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/key_schedule_generator.v:117]
+WARNING: [Synth 8-6014] Unused sequential element load_plntxt_internal_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/simon_cipher_top_encrypt_decrypt.v:69]
+WARNING: [Synth 8-7129] Port z_counter[31] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[30] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[29] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[28] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[27] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[26] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[25] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[24] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[23] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[22] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[21] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[20] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[19] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[18] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[17] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[16] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[15] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[14] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[13] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[12] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[11] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[10] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[9] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[8] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[7] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[6] in module sub_key_generator is either unconnected or has no load
+WARNING: [Synth 8-7129] Port z_counter[5] in module sub_key_generator is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3090.594 ; gain = 197.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3110.875 ; gain = 218.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 3110.875 ; gain = 218.141
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 3110.875 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/full_cipher_uart.xdc]
+Finished Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/full_cipher_uart.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3223.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3242.086 ; gain = 349.352
+29 Infos, 59 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 3242.086 ; gain = 349.352
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 3256.406 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3287.902 ; gain = 1.445
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.414 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.626 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.635 . Memory (MB): peak = 3431.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3431.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3478.152 ; gain = 221.746

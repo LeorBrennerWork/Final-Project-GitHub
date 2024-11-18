@@ -1,0 +1,348 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER/Documents/Leor Brenner/VsCode files/Final_Project/VHDL Code
+Parray_signal_pkg
+Z1 DPx4 ieee 20 numeric_std_unsigned 0 22 L9z`>=>LNY9h8oAIomUKm3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 178
+Z6 w1710875569
+Z7 dC:/Users/USER/Documents/Leor Brenner/Final_Project/VHDL Code
+8array_signal_pkg.vhd
+Farray_signal_pkg.vhd
+l0
+L5 1
+VEnm>f3e`N_n?N];nX0`<a1
+!s100 nSJ4lXfgHIDL;_4N8j3SZ3
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1719325363
+!i10b 1
+Z10 !s108 1719325363.000000
+!s90 -reportprogress|300|array_signal_pkg.vhd|
+!s107 array_signal_pkg.vhd|
+!i113 1
+Z11 tExplicit 1 CvgOpt 0
+Ekey_schedule_generator
+R6
+R1
+Z12 DPx4 work 16 array_signal_pkg 0 22 Enm>f3e`N_n?N];nX0`<a1
+R2
+R3
+R4
+R5
+!i122 181
+R7
+Z13 8key_schedule_generator.vhd
+Z14 Fkey_schedule_generator.vhd
+l0
+L7 1
+VmGJGT_^hI8`ZbDhI0G5E20
+!s100 l6U@h2jbz772EKA:oS3:U1
+R8
+32
+R9
+!i10b 1
+R10
+Z15 !s90 -reportprogress|300|key_schedule_generator.vhd|
+Z16 !s107 key_schedule_generator.vhd|
+!i113 1
+R11
+Akey_schedule_generator_arc
+R1
+R12
+R2
+R3
+R4
+R5
+DEx4 work 22 key_schedule_generator 0 22 mGJGT_^hI8`ZbDhI0G5E20
+!i122 181
+l35
+L17 311
+VUdilLGOXN2:e7WKM>DgO;1
+!s100 c8de;efa<X`:boCZgb6Si1
+R8
+32
+R9
+!i10b 1
+R10
+R15
+R16
+!i113 1
+R11
+Eround
+R6
+R2
+R3
+R4
+R5
+!i122 179
+R7
+Z17 8round.vhd
+Z18 Fround.vhd
+l0
+L6 1
+VP0`kG`hK<VON9=`]8MB@F1
+!s100 ?1M?3[=DQ8?B;UN50jc?Y3
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|round.vhd|
+Z20 !s107 round.vhd|
+!i113 1
+R11
+Around_arc
+R2
+R3
+R4
+R5
+DEx4 work 5 round 0 22 P0`kG`hK<VON9=`]8MB@F1
+!i122 179
+l20
+L19 15
+VE=ZJ83B2[QecO8kdYCBAG1
+!s100 LJ4]]bWdfIk4T9nzRWVO]0
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R11
+Esimon_cipher
+Z21 w1700077200
+R1
+R2
+R3
+R4
+R5
+!i122 33
+R0
+Z22 8Simon_Cipher_3264_hardcode.vhd
+Z23 FSimon_Cipher_3264_hardcode.vhd
+l0
+L6 1
+VK7ESYI>ljcUQmo0UW66EN0
+!s100 WN`8O?Y5MbKY4a1[?;geJ1
+R8
+32
+Z24 !s110 1700580924
+!i10b 1
+Z25 !s108 1700580924.000000
+Z26 !s90 -reportprogress|300|Simon_Cipher_3264_hardcode.vhd|
+Z27 !s107 Simon_Cipher_3264_hardcode.vhd|
+!i113 1
+R11
+Asimon_cipher_arc
+R1
+R2
+R3
+R4
+R5
+DEx4 work 12 simon_cipher 0 22 K7ESYI>ljcUQmo0UW66EN0
+!i122 33
+l41
+L17 700
+Vn`OzOYmC1?PUAKml_^>lM3
+!s100 MAZlKSA6c8n9JiM0[<BiB1
+R8
+32
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R11
+Esimon_cipher_hierarchy
+R6
+R1
+R12
+R2
+R3
+R4
+R5
+!i122 182
+R7
+Z28 8Simon_Cipher_Hierarchy.vhd
+Z29 FSimon_Cipher_Hierarchy.vhd
+l0
+L8 1
+V2m=4=IBI]VjcFmOX^h`g61
+!s100 g4O<EUd5=V]]aDX`<_HJC1
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|Simon_Cipher_Hierarchy.vhd|
+Z31 !s107 Simon_Cipher_Hierarchy.vhd|
+!i113 1
+R11
+Asimon_cipher_hierarchy_arc
+R1
+R12
+R2
+R3
+R4
+R5
+DEx4 work 22 simon_cipher_hierarchy 0 22 2m=4=IBI]VjcFmOX^h`g61
+!i122 182
+l56
+L21 412
+VI^63]=]KHPJ1Af^Q5gNZV2
+!s100 A:KeRN<]e1Gb?gf99^8HF2
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R11
+Esimon_cipher_hierarchy_tb
+R6
+R2
+R3
+R4
+R5
+!i122 183
+R7
+Z32 8Simon_Cipher_Hierarchy_tb.vhd
+Z33 FSimon_Cipher_Hierarchy_tb.vhd
+l0
+L6 1
+V1Hb`LbHBX4L_Gzi^eB5Uf2
+!s100 DCY0HUR<Uj:fgSS6i5i[O1
+R8
+32
+R9
+!i10b 1
+R10
+Z34 !s90 -reportprogress|300|Simon_Cipher_Hierarchy_tb.vhd|
+Z35 !s107 Simon_Cipher_Hierarchy_tb.vhd|
+!i113 1
+R11
+Asimon_cipher_hierarchy_tb_arc
+R2
+R3
+R4
+R5
+Z36 DEx4 work 25 simon_cipher_hierarchy_tb 0 22 1Hb`LbHBX4L_Gzi^eB5Uf2
+!i122 183
+l30
+Z37 L9 75
+Z38 VNeYbSlmgkWH8<J72G]42a3
+Z39 !s100 TK4P<9:23LUnX<z];P93g3
+R8
+32
+R9
+!i10b 1
+R10
+R34
+R35
+!i113 1
+R11
+Esimon_cipher_tb
+Z40 w1699885020
+R1
+R2
+R3
+R4
+R5
+!i122 34
+R0
+Z41 8Simon_Cipher_3264_hardcode_tb.vhd
+Z42 FSimon_Cipher_3264_hardcode_tb.vhd
+l0
+L6 1
+VkK7M0`moEcPZil]Yi_IXF1
+!s100 Yi4Q]Ba?<GR2Xo=MO;<N40
+R8
+32
+Z43 !s110 1700580929
+!i10b 1
+Z44 !s108 1700580929.000000
+Z45 !s90 -reportprogress|300|Simon_Cipher_3264_hardcode_tb.vhd|
+Z46 !s107 Simon_Cipher_3264_hardcode_tb.vhd|
+!i113 1
+R11
+Asimon_cipher_tb_arc
+R1
+R2
+R3
+R4
+R5
+DEx4 work 15 simon_cipher_tb 0 22 kK7M0`moEcPZil]Yi_IXF1
+!i122 34
+l26
+L9 37
+VP]F>8PflgOoK1E<GD:T942
+!s100 g4[]Pn8Wn7X@Kl2:zlk>M2
+R8
+32
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R11
+Esub_key_generator
+R6
+R2
+R3
+R4
+R5
+!i122 180
+R7
+Z47 8sub_key_generator.vhd
+Z48 Fsub_key_generator.vhd
+l0
+L6 1
+V?QalbU2L1V[JK1ehTGabD3
+!s100 4`6=^_:8i`mfTI2OKH0i?1
+R8
+32
+R9
+!i10b 1
+R10
+Z49 !s90 -reportprogress|300|sub_key_generator.vhd|
+Z50 !s107 sub_key_generator.vhd|
+!i113 1
+R11
+Asub_key_generator_arc
+R2
+R3
+R4
+R5
+DEx4 work 17 sub_key_generator 0 22 ?QalbU2L1V[JK1ehTGabD3
+!i122 180
+l24
+L19 18
+VNZ?Ek86LbIB<PjJ`OMzKK0
+!s100 fcMhg8S`G5[ehP9NdPF9X2
+R8
+32
+R9
+!i10b 1
+R10
+R49
+R50
+!i113 1
+R11

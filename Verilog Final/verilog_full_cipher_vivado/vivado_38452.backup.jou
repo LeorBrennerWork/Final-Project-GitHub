@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Aug  5 18:01:19 2024
+# Process ID: 38452
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32892 C:\Users\USER\Documents\Leor Brenner\Final_Project\verilog_full_cipher_vivado\verilog_full_cipher_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/verilog_full_cipher_vivado.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1

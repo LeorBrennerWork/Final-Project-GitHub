@@ -1,0 +1,470 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Aug 27 19:30:16 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       1996 |       1996 |       0 |    0 | 6083 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |        647 |        647 |       0 |    0 | 2282 |      0 |      0 |          0 |
+|     (decrypt)                        | simon_cipher_hierarchy_decrypt |         61 |         61 |       0 |    0 | 1098 |      0 |      0 |          0 |
+|     key_schedule_create              |      key_schedule_generator_55 |         58 |         58 |       0 |    0 |  160 |      0 |      0 |          0 |
+|       (key_schedule_create)          |      key_schedule_generator_55 |         32 |         32 |       0 |    0 |   64 |      0 |      0 |          0 |
+|       subkey_4                       |           sub_key_generator_88 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_5                       |           sub_key_generator_89 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_6                       |           sub_key_generator_90 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                       round_56 |         32 |         32 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                       round_57 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                       round_58 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                       round_59 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                       round_60 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                       round_61 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                       round_62 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                       round_63 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                       round_64 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                       round_65 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                       round_66 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_67 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_68 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_69 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_70 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_71 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_72 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_73 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_74 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_75 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_76 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_77 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_78 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_79 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_80 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_81 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_82 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_83 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_84 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_85 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_86 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_87 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1123 |       1123 |       0 |    0 | 3434 |      0 |      0 |          0 |
+|     (encrypt)                        | simon_cipher_hierarchy_encrypt |         34 |         34 |       0 |    0 | 1146 |      0 |      0 |          0 |
+|     key_schedule_create              |         key_schedule_generator |        593 |        593 |       0 |    0 | 1264 |      0 |      0 |          0 |
+|       (key_schedule_create)          |         key_schedule_generator |         32 |         32 |       0 |    0 |  464 |      0 |      0 |          0 |
+|       subkey_10                      |              sub_key_generator |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_11                      |           sub_key_generator_31 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_12                      |           sub_key_generator_32 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_13                      |           sub_key_generator_33 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_14                      |           sub_key_generator_34 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_15                      |           sub_key_generator_35 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_16                      |           sub_key_generator_36 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_17                      |           sub_key_generator_37 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_18                      |           sub_key_generator_38 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_19                      |           sub_key_generator_39 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_20                      |           sub_key_generator_40 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_21                      |           sub_key_generator_41 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_22                      |           sub_key_generator_42 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_23                      |           sub_key_generator_43 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_24                      |           sub_key_generator_44 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_25                      |           sub_key_generator_45 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_26                      |           sub_key_generator_46 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_27                      |           sub_key_generator_47 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_28                      |           sub_key_generator_48 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_29                      |           sub_key_generator_49 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_30                      |           sub_key_generator_50 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_31                      |           sub_key_generator_51 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_7                       |           sub_key_generator_52 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_8                       |           sub_key_generator_53 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_9                       |           sub_key_generator_54 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                          round |          0 |          0 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                        round_0 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                        round_1 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                        round_2 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                        round_3 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                        round_4 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                        round_5 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                        round_6 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                        round_7 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                        round_8 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                        round_9 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_10 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_11 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_12 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_13 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_14 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_15 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_16 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_17 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_18 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_19 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_20 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_21 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_22 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_23 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_24 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_25 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_26 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_27 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_28 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_29 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_30 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |        118 |        118 |       0 |    0 |  194 |      0 |      0 |          0 |
+|     (full_rxd_do)                    |                       get_data |         50 |         50 |       0 |    0 |  132 |      0 |      0 |          0 |
+|     rxd_do                           |                       uart_rxd |         68 |         68 |       0 |    0 |   62 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |         99 |         99 |       0 |    0 |  105 |      0 |      0 |          0 |
+|     (full_txd_do)                    |                      send_data |         54 |         54 |       0 |    0 |   44 |      0 |      0 |          0 |
+|     txd_do                           |                       uart_txd |         45 |         45 |       0 |    0 |   61 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Aug 27 19:30:49 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 1
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       1996 |       1996 |       0 |    0 | 6083 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |        647 |        647 |       0 |    0 | 2282 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1123 |       1123 |       0 |    0 | 3434 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |        118 |        118 |       0 |    0 |  194 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |         99 |         99 |       0 |    0 |  105 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Aug 27 19:31:15 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 2
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       1996 |       1996 |       0 |    0 | 6083 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |        647 |        647 |       0 |    0 | 2282 |      0 |      0 |          0 |
+|     (decrypt)                        | simon_cipher_hierarchy_decrypt |         61 |         61 |       0 |    0 | 1098 |      0 |      0 |          0 |
+|     key_schedule_create              |      key_schedule_generator_55 |         58 |         58 |       0 |    0 |  160 |      0 |      0 |          0 |
+|     round_1                          |                       round_56 |         32 |         32 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                       round_57 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                       round_58 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                       round_59 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                       round_60 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                       round_61 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                       round_62 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                       round_63 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                       round_64 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                       round_65 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                       round_66 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_67 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_68 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_69 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_70 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_71 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_72 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_73 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_74 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_75 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_76 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_77 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_78 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_79 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_80 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_81 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_82 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_83 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_84 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_85 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_86 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_87 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1123 |       1123 |       0 |    0 | 3434 |      0 |      0 |          0 |
+|     (encrypt)                        | simon_cipher_hierarchy_encrypt |         34 |         34 |       0 |    0 | 1146 |      0 |      0 |          0 |
+|     key_schedule_create              |         key_schedule_generator |        593 |        593 |       0 |    0 | 1264 |      0 |      0 |          0 |
+|     round_1                          |                          round |          0 |          0 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                        round_0 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                        round_1 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                        round_2 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                        round_3 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                        round_4 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                        round_5 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                        round_6 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                        round_7 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                        round_8 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                        round_9 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_10 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_11 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_12 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_13 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_14 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_15 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_16 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_17 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_18 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_19 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_20 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_21 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_22 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_23 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_24 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_25 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_26 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_27 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_28 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_29 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_30 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |        118 |        118 |       0 |    0 |  194 |      0 |      0 |          0 |
+|     (full_rxd_do)                    |                       get_data |         50 |         50 |       0 |    0 |  132 |      0 |      0 |          0 |
+|     rxd_do                           |                       uart_rxd |         68 |         68 |       0 |    0 |   62 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |         99 |         99 |       0 |    0 |  105 |      0 |      0 |          0 |
+|     (full_txd_do)                    |                      send_data |         54 |         54 |       0 |    0 |   44 |      0 |      0 |          0 |
+|     txd_do                           |                       uart_txd |         45 |         45 |       0 |    0 |   61 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+VHDL
+-------------------------------------------------------------------------------------------------------------------------------
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       2570 |       2570 |       0 |    0 | 7537 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |       1205 |       1205 |       0 |    0 | 3498 |      0 |      0 |          0 |
+|     (decrypt)                        | simon_cipher_hierarchy_decrypt |         37 |         37 |       0 |    0 | 1066 |      0 |      0 |          0 |
+|     key_schedule_create              |      key_schedule_generator_58 |        672 |        672 |       0 |    0 | 1408 |      0 |      0 |          0 |
+|       (key_schedule_create)          |      key_schedule_generator_58 |          0 |          0 |       0 |    0 |  512 |      0 |      0 |          0 |
+|       sub_key_generator_10           |           sub_key_generator_91 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_11           |           sub_key_generator_92 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_12           |           sub_key_generator_93 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_13           |           sub_key_generator_94 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_14           |           sub_key_generator_95 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_15           |           sub_key_generator_96 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_16           |           sub_key_generator_97 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_17           |           sub_key_generator_98 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_18           |           sub_key_generator_99 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_19           |          sub_key_generator_100 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_20           |          sub_key_generator_101 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_21           |          sub_key_generator_102 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_22           |          sub_key_generator_103 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_23           |          sub_key_generator_104 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_24           |          sub_key_generator_105 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_25           |          sub_key_generator_106 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_26           |          sub_key_generator_107 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_27           |          sub_key_generator_108 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_28           |          sub_key_generator_109 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_29           |          sub_key_generator_110 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_30           |          sub_key_generator_111 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_31           |          sub_key_generator_112 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_4            |          sub_key_generator_113 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_5            |          sub_key_generator_114 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_6            |          sub_key_generator_115 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_7            |          sub_key_generator_116 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_8            |          sub_key_generator_117 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_9            |          sub_key_generator_118 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                       round_59 |          0 |          0 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                       round_60 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                       round_61 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                       round_62 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                       round_63 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                       round_64 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                       round_65 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                       round_66 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                       round_67 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                       round_68 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                       round_69 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_70 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_71 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_72 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_73 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_74 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_75 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_76 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_77 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_78 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_79 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_80 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_81 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_82 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_83 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_84 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_85 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_86 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_87 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_88 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_89 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_90 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1269 |       1269 |       0 |    0 | 3689 |      0 |      0 |          0 |
+|     (encrypt)                        | simon_cipher_hierarchy_encrypt |         69 |         69 |       0 |    0 | 1193 |      0 |      0 |          0 |
+|     key_schedule_create              |         key_schedule_generator |        688 |        688 |       0 |    0 | 1472 |      0 |      0 |          0 |
+|       (key_schedule_create)          |         key_schedule_generator |         16 |         16 |       0 |    0 |  576 |      0 |      0 |          0 |
+|       sub_key_generator_10           |              sub_key_generator |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_11           |           sub_key_generator_31 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_12           |           sub_key_generator_32 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_13           |           sub_key_generator_33 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_14           |           sub_key_generator_34 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_15           |           sub_key_generator_35 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_16           |           sub_key_generator_36 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_17           |           sub_key_generator_37 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_18           |           sub_key_generator_38 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_19           |           sub_key_generator_39 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_20           |           sub_key_generator_40 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_21           |           sub_key_generator_41 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_22           |           sub_key_generator_42 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_23           |           sub_key_generator_43 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_24           |           sub_key_generator_44 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_25           |           sub_key_generator_45 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_26           |           sub_key_generator_46 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_27           |           sub_key_generator_47 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_28           |           sub_key_generator_48 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_29           |           sub_key_generator_49 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_30           |           sub_key_generator_50 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_31           |           sub_key_generator_51 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_4            |           sub_key_generator_52 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_5            |           sub_key_generator_53 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_6            |           sub_key_generator_54 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_7            |           sub_key_generator_55 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_8            |           sub_key_generator_56 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       sub_key_generator_9            |           sub_key_generator_57 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                          round |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                        round_0 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                        round_1 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                        round_2 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                        round_3 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                        round_4 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                        round_5 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                        round_6 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                        round_7 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                        round_8 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                        round_9 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_10 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_11 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_12 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_13 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_14 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_15 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_16 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_17 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_18 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_19 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_20 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_21 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_22 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_23 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_24 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_25 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_26 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_27 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_28 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_29 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_30 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |         50 |         50 |       0 |    0 |  234 |      0 |      0 |          0 |
+|     (full_rxd_do)                    |                       get_data |         13 |         13 |       0 |    0 |  201 |      0 |      0 |          0 |
+|     rxd_do                           |                       uart_rxd |         37 |         37 |       0 |    0 |   33 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |         36 |         36 |       0 |    0 |   48 |      0 |      0 |          0 |
+|     (full_txd_do)                    |                      send_data |         20 |         20 |       0 |    0 |   15 |      0 |      0 |          0 |
+|     txd_do                           |               uart_txd_combine |         16 |         16 |       0 |    0 |   33 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

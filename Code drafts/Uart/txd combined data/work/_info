@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER/Documents/Leor Brenner/Final_Project/Uart/txd combined data
+Esend_data
+Z1 w1716394853
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 64
+R0
+Z6 8send_data.vhd
+Z7 Fsend_data.vhd
+l0
+L5 1
+V:7iMk7`EU<<gl46dFjYz@0
+!s100 L9bfM2Uk3RaWTCJ6=S2Mk3
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1716394859
+!i10b 1
+Z10 !s108 1716394858.000000
+Z11 !s90 -reportprogress|300|send_data.vhd|
+Z12 !s107 send_data.vhd|
+!i113 1
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 9 send_data 0 22 :7iMk7`EU<<gl46dFjYz@0
+!i122 64
+l45
+L19 88
+V`?:LmnK7kn>30a39=<@hh1
+!s100 LFnz_8ZE>8obkY;1_]I5_1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+Esend_data_tb
+Z14 w1716392068
+R2
+R3
+R4
+R5
+!i122 65
+R0
+Z15 8send_data_tb.vhd
+Z16 Fsend_data_tb.vhd
+l0
+Z17 L35 1
+VbAUk<iIlHHTI`lD>b`5F43
+!s100 GV^n65:U7BdM3PEWCKBAi3
+R8
+32
+R9
+!i10b 1
+Z18 !s108 1716394859.000000
+Z19 !s90 -reportprogress|300|send_data_tb.vhd|
+Z20 !s107 send_data_tb.vhd|
+!i113 1
+R13
+Abehavioral
+R2
+R3
+R4
+R5
+Z21 DEx4 work 12 send_data_tb 0 22 bAUk<iIlHHTI`lD>b`5F43
+!i122 65
+l59
+Z22 L39 47
+Z23 V5JKiYaW5@kG4<TgN>F0K^1
+Z24 !s100 aQ7<4hW8j]514Qn[e;RG[2
+R8
+32
+R9
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R13
+Euart_txd_combine
+Z25 w1716392512
+R2
+R3
+R4
+R5
+!i122 63
+R0
+Z26 8uart_txd_combine.vhd
+Z27 Fuart_txd_combine.vhd
+l0
+R17
+VCL;ZP5Eb4_JW4@TN;?g7l2
+!s100 QHGH1kn2<UzigTzk<gT5H0
+R8
+32
+Z28 !s110 1716394858
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|uart_txd_combine.vhd|
+Z30 !s107 uart_txd_combine.vhd|
+!i113 1
+R13
+Abehavioral
+R2
+R3
+R4
+R5
+DEx4 work 16 uart_txd_combine 0 22 CL;ZP5Eb4_JW4@TN;?g7l2
+!i122 63
+l56
+L45 79
+VAdolEg[;agNzJIkFeUWgO3
+!s100 _?SUo@=TW[:=NlVl[nVEh0
+R8
+32
+R28
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13

@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Sep 10 23:23:23 2024
+# Process ID: 18192
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11556 C:\Users\USER\Documents\Leor Brenner\Final_Project\verilog_full_cipher_vivado\verilog_full_cipher_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado/verilog_full_cipher_vivado.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+report_utilization -hierarchical_depth 2
+report_utilization -hierarchical -hierarchical_depth 2
+reset_run impl_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+report_utilization -hierarchical -hierarchical_depth 2
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+report_utilization -hierarchical -hierarchical_depth 2
+open_run impl_1
+report_utilization
+close_design
+open_run synth_1 -name synth_1
+report_utilization -hierarchical -hierarchical_depth 2
+report_utilization -hierarchical
+report_utilization -hierarchical -hierarchical_depth 0
+report_utilization -hierarchical -hierarchical_depth 1
+close_design
+open_run impl_1
+startgroup 
+set_property is_bel_fixed true [get_cells [list {encrypt/cphrtxt_reg[1]} {encrypt/cphrtxt_reg[2]} {encrypt/cphrtxt_reg[3]}]]
+set_property is_loc_fixed true [get_cells [list {encrypt/cphrtxt_reg[1]} {encrypt/cphrtxt_reg[2]} {encrypt/cphrtxt_reg[3]}]]
+endgroup
+startgroup 
+set_property is_bel_fixed false [get_cells [list {encrypt/cphrtxt_reg[1]} {encrypt/cphrtxt_reg[2]} {encrypt/cphrtxt_reg[3]}]]
+set_property is_loc_fixed false [get_cells [list {encrypt/cphrtxt_reg[1]} {encrypt/cphrtxt_reg[2]} {encrypt/cphrtxt_reg[3]}]]
+endgroup

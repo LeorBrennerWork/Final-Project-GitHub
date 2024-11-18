@@ -1,0 +1,111 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Tue Sep 24 04:59:10 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file simon_cipher_top_encrypt_decrypt_control_sets_placed.rpt
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    33 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    16 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            5709 |          991 |
+| Yes          | No                    | No                     |               1 |            1 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             371 |           81 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                         Enable Signal                         |                  Set/Reset Signal                  | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | full_rxd_do/rxd_do/check_start_end_bit2_out                   |                                                    |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | full_txd_do/txd_do/txd_data_out1_out                          | rst_IBUF                                           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG |                                                               |                                                    |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG | full_rxd_do/rxd_do/baud_rdy                                   | full_rxd_do/rxd_do/middle_counter[3]_i_1_n_0       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | full_txd_do/txd_do/FSM_onehot_my_txd_state_machine[3]_i_1_n_0 | rst_IBUF                                           |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[49]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[82]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[58]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[88]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[34]                                        | rst_IBUF                                           |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[40]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[26]                                        | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | full_txd_do/txd_do/input_data_internal[7]_i_1_n_0             | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[73]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_txd_do/send_data_internal[7]_i_1_n_0                     | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | decrypt/counter0                                              | decrypt/counter[7]_i_1__0_n_0                      |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | encrypt/counter0                                              | encrypt/counter[7]_i_1_n_0                         |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[17]                                        | rst_IBUF                                           |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[64]                                        | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[8]                                         | rst_IBUF                                           |                4 |              8 |         2.00 |
+|  clk_IBUF_BUFG | full_rxd_do/p_0_in[2]                                         | rst_IBUF                                           |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG | encrypt/cphrtxt_rdy_reg_0[0]                                  | rst_IBUF                                           |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG |                                                               | full_rxd_do/rxd_do/baud_rate_counter[10]_i_1_n_0   |                4 |             11 |         2.75 |
+|  clk_IBUF_BUFG |                                                               | full_txd_do/txd_do/baud_rate_counter[0]_i_1__0_n_0 |                4 |             14 |         3.50 |
+|  clk_IBUF_BUFG |                                                               | seven_seg_output/seven_seg_counter[0]_i_1_n_0      |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG | full_txd_do/data_divide_counter0                              | full_txd_do/data_divide_counter[2]                 |               10 |             31 |         3.10 |
+|  clk_IBUF_BUFG |                                                               | decrypt/cphrtxt[31]_i_1__0_n_0                     |                4 |             32 |         8.00 |
+|  clk_IBUF_BUFG |                                                               | encrypt/cphrtxt[31]_i_1_n_0                        |                6 |             32 |         5.33 |
+|  clk_IBUF_BUFG | full_txd_do/txd_do/bit_index_counter[31]_i_1__0_n_0           | rst_IBUF                                           |                5 |             32 |         6.40 |
+|  clk_IBUF_BUFG | full_rxd_do/rxd_do/bit_index_counter[31]_i_1_n_0              | rst_IBUF                                           |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | full_rxd_do/rxd_done_current                                  | rst_IBUF                                           |               12 |             33 |         2.75 |
+|  clk_IBUF_BUFG | load_key_internal                                             | rst_IBUF                                           |               14 |             96 |         6.86 |
+|  clk_IBUF_BUFG |                                                               | rst_IBUF                                           |              968 |           5602 |         5.79 |
++----------------+---------------------------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
+
+

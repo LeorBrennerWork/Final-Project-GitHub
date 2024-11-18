@@ -1,0 +1,613 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Oct 30 13:14:13 2024
+# Process ID: 10592
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent948 C:\Users\USER\Documents\Leor Brenner\Final_Project\Verilog Final\verilog_full_cipher_vivado\verilog_full_cipher_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/verilog_full_cipher_vivado.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado'
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/USER/Documents/Leor Brenner/Final_Project/verilog_full_cipher_vivado' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/verilog_full_cipher_vivado.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:10 . Memory (MB): peak = 1591.406 ; gain = 381.758
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1970.719 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 2071.590 ; gain = 1.523
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.188 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.343 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.349 . Memory (MB): peak = 2679.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2679.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 2818.723 ; gain = 1198.688
+close_design
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 2911.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/full_cipher_uart.xdc]
+Finished Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/Verilog Full Cipher/full_cipher_uart.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2911.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 18:15:31 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Memory
+3. DSP
+4. IO and GT Specific
+5. Clocking
+6. Specific Feature
+7. Primitives
+8. Black Boxes
+9. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++-------------------------+------+-------+------------+-----------+-------+
+|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
++-------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*             | 2005 |     0 |          0 |     20800 |  9.64 |
+|   LUT as Logic          | 2005 |     0 |          0 |     20800 |  9.64 |
+|   LUT as Memory         |    0 |     0 |          0 |      9600 |  0.00 |
+| Slice Registers         | 6082 |     0 |          0 |     41600 | 14.62 |
+|   Register as Flip Flop | 6082 |     0 |          0 |     41600 | 14.62 |
+|   Register as Latch     |    0 |     0 |          0 |     41600 |  0.00 |
+| F7 Muxes                |    0 |     0 |          0 |     16300 |  0.00 |
+| F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
++-------------------------+------+-------+------------+-----------+-------+
+* Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+Warning! LUT value is adjusted to account for LUT combining.
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 0     |          Yes |           - |          Set |
+| 0     |          Yes |           - |        Reset |
+| 1     |          Yes |         Set |            - |
+| 6081  |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Memory
+---------
+
++----------------+------+-------+------------+-----------+-------+
+|    Site Type   | Used | Fixed | Prohibited | Available | Util% |
++----------------+------+-------+------------+-----------+-------+
+| Block RAM Tile |    0 |     0 |          0 |        50 |  0.00 |
+|   RAMB36/FIFO* |    0 |     0 |          0 |        50 |  0.00 |
+|   RAMB18       |    0 |     0 |          0 |       100 |  0.00 |
++----------------+------+-------+------------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+3. DSP
+------
+
++-----------+------+-------+------------+-----------+-------+
+| Site Type | Used | Fixed | Prohibited | Available | Util% |
++-----------+------+-------+------------+-----------+-------+
+| DSPs      |    0 |     0 |          0 |        90 |  0.00 |
++-----------+------+-------+------------+-----------+-------+
+
+
+4. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+------------+-----------+-------+
+|          Site Type          | Used | Fixed | Prohibited | Available | Util% |
++-----------------------------+------+-------+------------+-----------+-------+
+| Bonded IOB                  |   15 |    15 |          0 |       106 | 14.15 |
+|   IOB Master Pads           |    7 |       |            |           |       |
+|   IOB Slave Pads            |    8 |       |            |           |       |
+| Bonded IPADs                |    0 |     0 |          0 |        10 |  0.00 |
+| Bonded OPADs                |    0 |     0 |          0 |         4 |  0.00 |
+| PHY_CONTROL                 |    0 |     0 |          0 |         5 |  0.00 |
+| PHASER_REF                  |    0 |     0 |          0 |         5 |  0.00 |
+| OUT_FIFO                    |    0 |     0 |          0 |        20 |  0.00 |
+| IN_FIFO                     |    0 |     0 |          0 |        20 |  0.00 |
+| IDELAYCTRL                  |    0 |     0 |          0 |         5 |  0.00 |
+| IBUFDS                      |    0 |     0 |          0 |       104 |  0.00 |
+| GTPE2_CHANNEL               |    0 |     0 |          0 |         2 |  0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |          0 |        20 |  0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |          0 |        20 |  0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |          0 |       250 |  0.00 |
+| IBUFDS_GTE2                 |    0 |     0 |          0 |         2 |  0.00 |
+| ILOGIC                      |    0 |     0 |          0 |       106 |  0.00 |
+| OLOGIC                      |    0 |     0 |          0 |       106 |  0.00 |
++-----------------------------+------+-------+------------+-----------+-------+
+
+
+5. Clocking
+-----------
+
++------------+------+-------+------------+-----------+-------+
+|  Site Type | Used | Fixed | Prohibited | Available | Util% |
++------------+------+-------+------------+-----------+-------+
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
+| BUFIO      |    0 |     0 |          0 |        20 |  0.00 |
+| MMCME2_ADV |    0 |     0 |          0 |         5 |  0.00 |
+| PLLE2_ADV  |    0 |     0 |          0 |         5 |  0.00 |
+| BUFMRCE    |    0 |     0 |          0 |        10 |  0.00 |
+| BUFHCE     |    0 |     0 |          0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |          0 |        20 |  0.00 |
++------------+------+-------+------------+-----------+-------+
+
+
+6. Specific Feature
+-------------------
+
++-------------+------+-------+------------+-----------+-------+
+|  Site Type  | Used | Fixed | Prohibited | Available | Util% |
++-------------+------+-------+------------+-----------+-------+
+| BSCANE2     |    0 |     0 |          0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |          0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |          0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |          0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |          0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |          0 |         2 |  0.00 |
+| PCIE_2_1    |    0 |     0 |          0 |         1 |  0.00 |
+| STARTUPE2   |    0 |     0 |          0 |         1 |  0.00 |
+| XADC        |    0 |     0 |          0 |         1 |  0.00 |
++-------------+------+-------+------------+-----------+-------+
+
+
+7. Primitives
+-------------
+
++----------+------+---------------------+
+| Ref Name | Used | Functional Category |
++----------+------+---------------------+
+| FDRE     | 6081 |        Flop & Latch |
+| LUT5     | 1113 |                 LUT |
+| LUT2     |  580 |                 LUT |
+| LUT3     |  493 |                 LUT |
+| LUT6     |  103 |                 LUT |
+| CARRY4   |   64 |          CarryLogic |
+| LUT4     |   33 |                 LUT |
+| OBUF     |   12 |                  IO |
+| LUT1     |    7 |                 LUT |
+| IBUF     |    3 |                  IO |
+| FDSE     |    1 |        Flop & Latch |
+| BUFG     |    1 |               Clock |
++----------+------+---------------------+
+
+
+8. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+9. Instantiated Netlists
+------------------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+report_utilization -hierarchical
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 18:17:07 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       2005 |       2005 |       0 |    0 | 6082 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |        647 |        647 |       0 |    0 | 2282 |      0 |      0 |          0 |
+|     (decrypt)                        | simon_cipher_hierarchy_decrypt |         61 |         61 |       0 |    0 | 1098 |      0 |      0 |          0 |
+|     key_schedule_create              |      key_schedule_generator_55 |         58 |         58 |       0 |    0 |  160 |      0 |      0 |          0 |
+|       (key_schedule_create)          |      key_schedule_generator_55 |         32 |         32 |       0 |    0 |   64 |      0 |      0 |          0 |
+|       subkey_4                       |           sub_key_generator_88 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_5                       |           sub_key_generator_89 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_6                       |           sub_key_generator_90 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                       round_56 |         32 |         32 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                       round_57 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                       round_58 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                       round_59 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                       round_60 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                       round_61 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                       round_62 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                       round_63 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                       round_64 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                       round_65 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                       round_66 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_67 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_68 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_69 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_70 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_71 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_72 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_73 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_74 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_75 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_76 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_77 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_78 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_79 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_80 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_81 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_82 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_83 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_84 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_85 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_86 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_87 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1123 |       1123 |       0 |    0 | 3434 |      0 |      0 |          0 |
+|     (encrypt)                        | simon_cipher_hierarchy_encrypt |         34 |         34 |       0 |    0 | 1146 |      0 |      0 |          0 |
+|     key_schedule_create              |         key_schedule_generator |        593 |        593 |       0 |    0 | 1264 |      0 |      0 |          0 |
+|       (key_schedule_create)          |         key_schedule_generator |         32 |         32 |       0 |    0 |  464 |      0 |      0 |          0 |
+|       subkey_10                      |              sub_key_generator |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_11                      |           sub_key_generator_31 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_12                      |           sub_key_generator_32 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_13                      |           sub_key_generator_33 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_14                      |           sub_key_generator_34 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_15                      |           sub_key_generator_35 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_16                      |           sub_key_generator_36 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_17                      |           sub_key_generator_37 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_18                      |           sub_key_generator_38 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_19                      |           sub_key_generator_39 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_20                      |           sub_key_generator_40 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_21                      |           sub_key_generator_41 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_22                      |           sub_key_generator_42 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_23                      |           sub_key_generator_43 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_24                      |           sub_key_generator_44 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_25                      |           sub_key_generator_45 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_26                      |           sub_key_generator_46 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_27                      |           sub_key_generator_47 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_28                      |           sub_key_generator_48 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_29                      |           sub_key_generator_49 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_30                      |           sub_key_generator_50 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_31                      |           sub_key_generator_51 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_7                       |           sub_key_generator_52 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_8                       |           sub_key_generator_53 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_9                       |           sub_key_generator_54 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                          round |          0 |          0 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                        round_0 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                        round_1 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                        round_2 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                        round_3 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                        round_4 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                        round_5 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                        round_6 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                        round_7 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                        round_8 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                        round_9 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_10 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_11 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_12 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_13 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_14 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_15 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_16 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_17 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_18 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_19 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_20 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_21 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_22 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_23 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_24 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_25 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_26 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_27 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_28 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_29 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_30 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |        125 |        125 |       0 |    0 |  194 |      0 |      0 |          0 |
+|     (full_rxd_do)                    |                       get_data |         57 |         57 |       0 |    0 |  132 |      0 |      0 |          0 |
+|     rxd_do                           |                       uart_rxd |         68 |         68 |       0 |    0 |   62 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |        100 |        100 |       0 |    0 |  105 |      0 |      0 |          0 |
+|     (full_txd_do)                    |                      send_data |         54 |         54 |       0 |    0 |   44 |      0 |      0 |          0 |
+|     txd_do                           |                       uart_txd |         46 |         46 |       0 |    0 |   61 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   27 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+
+report_utilization -hierarchical_depth 1
+ERROR: [Common 17-69] Command failed: '-hierarchical_depth' should be used with '-hierarchical'
+report_utilization -hierarchical -hierarchical_depth 1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 18:18:07 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 1
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       2005 |       2005 |       0 |    0 | 6082 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |        647 |        647 |       0 |    0 | 2282 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1123 |       1123 |       0 |    0 | 3434 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |        125 |        125 |       0 |    0 |  194 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |        100 |        100 |       0 |    0 |  105 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   27 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 2911.148 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 64 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2911.148 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.383 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.607 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.613 . Memory (MB): peak = 2911.148 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2911.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+report_utilization -hierarchical
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Wed Oct 30 18:28:30 2024
+| Host         : Leor-PC-5530 running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical
+| Design       : simon_cipher_top_encrypt_decrypt
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|               Instance               |             Module             | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| simon_cipher_top_encrypt_decrypt     |                          (top) |       1996 |       1996 |       0 |    0 | 6083 |      0 |      0 |          0 |
+|   (simon_cipher_top_encrypt_decrypt) |                          (top) |          0 |          0 |       0 |    0 |   40 |      0 |      0 |          0 |
+|   decrypt                            | simon_cipher_hierarchy_decrypt |        647 |        647 |       0 |    0 | 2282 |      0 |      0 |          0 |
+|     (decrypt)                        | simon_cipher_hierarchy_decrypt |         61 |         61 |       0 |    0 | 1098 |      0 |      0 |          0 |
+|     key_schedule_create              |      key_schedule_generator_55 |         58 |         58 |       0 |    0 |  160 |      0 |      0 |          0 |
+|       (key_schedule_create)          |      key_schedule_generator_55 |         32 |         32 |       0 |    0 |   64 |      0 |      0 |          0 |
+|       subkey_4                       |           sub_key_generator_88 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_5                       |           sub_key_generator_89 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_6                       |           sub_key_generator_90 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                       round_56 |         32 |         32 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                       round_57 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                       round_58 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                       round_59 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                       round_60 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                       round_61 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                       round_62 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                       round_63 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                       round_64 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                       round_65 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                       round_66 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_67 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_68 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_69 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_70 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_71 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_72 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_73 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_74 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_75 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_76 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_77 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_78 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_79 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_80 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_81 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_82 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_83 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_84 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_85 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_86 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_87 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   encrypt                            | simon_cipher_hierarchy_encrypt |       1123 |       1123 |       0 |    0 | 3434 |      0 |      0 |          0 |
+|     (encrypt)                        | simon_cipher_hierarchy_encrypt |         34 |         34 |       0 |    0 | 1146 |      0 |      0 |          0 |
+|     key_schedule_create              |         key_schedule_generator |        593 |        593 |       0 |    0 | 1264 |      0 |      0 |          0 |
+|       (key_schedule_create)          |         key_schedule_generator |         32 |         32 |       0 |    0 |  464 |      0 |      0 |          0 |
+|       subkey_10                      |              sub_key_generator |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_11                      |           sub_key_generator_31 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_12                      |           sub_key_generator_32 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_13                      |           sub_key_generator_33 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_14                      |           sub_key_generator_34 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_15                      |           sub_key_generator_35 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_16                      |           sub_key_generator_36 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_17                      |           sub_key_generator_37 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_18                      |           sub_key_generator_38 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_19                      |           sub_key_generator_39 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_20                      |           sub_key_generator_40 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_21                      |           sub_key_generator_41 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_22                      |           sub_key_generator_42 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_23                      |           sub_key_generator_43 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_24                      |           sub_key_generator_44 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_25                      |           sub_key_generator_45 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_26                      |           sub_key_generator_46 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_27                      |           sub_key_generator_47 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_28                      |           sub_key_generator_48 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_29                      |           sub_key_generator_49 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_30                      |           sub_key_generator_50 |         25 |         25 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_31                      |           sub_key_generator_51 |         24 |         24 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_7                       |           sub_key_generator_52 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_8                       |           sub_key_generator_53 |          8 |          8 |       0 |    0 |   32 |      0 |      0 |          0 |
+|       subkey_9                       |           sub_key_generator_54 |          9 |          9 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_1                          |                          round |          0 |          0 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_10                         |                        round_0 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_11                         |                        round_1 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_12                         |                        round_2 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_13                         |                        round_3 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_14                         |                        round_4 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_15                         |                        round_5 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_16                         |                        round_6 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_17                         |                        round_7 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_18                         |                        round_8 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_19                         |                        round_9 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_2                          |                       round_10 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_20                         |                       round_11 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_21                         |                       round_12 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_22                         |                       round_13 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_23                         |                       round_14 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_24                         |                       round_15 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_25                         |                       round_16 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_26                         |                       round_17 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_27                         |                       round_18 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_28                         |                       round_19 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_29                         |                       round_20 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_3                          |                       round_21 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_30                         |                       round_22 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_31                         |                       round_23 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_32                         |                       round_24 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_4                          |                       round_25 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_5                          |                       round_26 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_6                          |                       round_27 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_7                          |                       round_28 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_8                          |                       round_29 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|     round_9                          |                       round_30 |         16 |         16 |       0 |    0 |   32 |      0 |      0 |          0 |
+|   full_rxd_do                        |                       get_data |        118 |        118 |       0 |    0 |  194 |      0 |      0 |          0 |
+|     (full_rxd_do)                    |                       get_data |         50 |         50 |       0 |    0 |  132 |      0 |      0 |          0 |
+|     rxd_do                           |                       uart_rxd |         68 |         68 |       0 |    0 |   62 |      0 |      0 |          0 |
+|   full_txd_do                        |                      send_data |         99 |         99 |       0 |    0 |  105 |      0 |      0 |          0 |
+|     (full_txd_do)                    |                      send_data |         54 |         54 |       0 |    0 |   44 |      0 |      0 |          0 |
+|     txd_do                           |                       uart_txd |         45 |         45 |       0 |    0 |   61 |      0 |      0 |          0 |
+|   seven_seg_output                   |                  seven_segment |         10 |         10 |       0 |    0 |   28 |      0 |      0 |          0 |
++--------------------------------------+--------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov  2 23:55:38 2024...

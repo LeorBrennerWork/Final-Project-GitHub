@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Aug 27 16:46:57 2024
+# Process ID: 37848
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6224 C:\Users\USER\Documents\Leor Brenner\Final_Project\full_encrypt_decrypt_vivado\full_encrypt_decrypt_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.xpr}
+update_compile_order -fileset sources_1
+set_property view.type table [get_dashboard_gadgets [list {utilization_1}]]
+set_property view.type graph [get_dashboard_gadgets [list {utilization_1}]]
+open_run impl_1
+report_utilization -name utilization_1
+report_utilization -hierarchical -filter {name == "simon_cipher_top_encrypt_decrypt"}
+report_utilization -hierarchical
+report_utilization -help
+report_utilization -hierarchical_depth 2
+report_utilization -hierarchical -hierarchical_depth 2
+report_utilization -hierarchical -hierarchical_percentages
+report_utilization -hierarchical -hierarchical_depth 1

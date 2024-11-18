@@ -1,0 +1,15 @@
+PROBLEMS:
+1. First ciphertext (also after reset) is correct but txd is problematic.
+2. Subsequent ciphertexts are usually incorrect but txd matches.
+3. Rxd doesnt work as intended after the first time or first few times.
+
+SOLUTIONS:
+1. Fix starting conditions for txd
+2. Fix ciphertext sync (when more time given for cipher to run the results are better)
+3. Fix rxd sync. Maybe wipe all data after a certain number of clk cycles that there is no new activity? There seems to be no problem when data is enter all in one string.
+
+
+1. Syncronizer on the handshake signal (after all the PC and the FPGA use different clocks).
+2. SM for when I am receiving, processing, IDLE or transmitting.
+3. Work with faster Baud Rates. 
+4(?). Maybe change conditions/configurations in RealTerm.

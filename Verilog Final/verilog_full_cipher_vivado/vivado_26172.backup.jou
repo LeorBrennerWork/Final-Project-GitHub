@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Oct 22 11:32:58 2024
+# Process ID: 26172
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7316 C:\Users\USER\Documents\Leor Brenner\Final_Project\Verilog Final\verilog_full_cipher_vivado\verilog_full_cipher_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/Verilog Final/verilog_full_cipher_vivado/verilog_full_cipher_vivado.xpr}
+update_compile_order -fileset sources_1
+open_run [get_runs impl_1]
+foreach mod [get_cells -hierarchical -filter {CELL_TYPE == "FDRE"}] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"} -of_objects [get_cells -hierarchical -filter {CELL_TYPE == "FDRE"}]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+[get_leaf_cells -hierarchical -filter {CELL_TYPE == "FDRE"}]
+get_ce
+get_cells
+get_cells type
+foreach cell [get_cells -hierarchical] {
+    # Get the cell type
+    set cell_type [get_property CELL_TYPE $cell]
+    
+    # Print the cell name and its type
+    puts "Cell: $cell, Type: $cell_type"
+}
+foreach mod [get_cells -hierarchical -filter {CELL_TYPE == ""}] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"} -of_objects [get_cells -hierarchical -filter {CELL_TYPE == ""}]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+foreach mod [get_cells -hierarchical -filter {CELL_TYPE == " "}] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"} -of_objects [get_cells -hierarchical -filter {CELL_TYPE == " "}]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+foreach mod [get_cells -hierarchical] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"} -of_objects [get_cells -hierarchical]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+foreach mod [get_cells] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"} -of_objects [get_cells]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+foreach mod [get_cells -hierarchical] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"}]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+foreach mod [get_cells -hierarchical] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"}] puts "Module: $mod_name" puts "Registers: $reg_list" }
+foreach mod [get_cells -hierarchical -filter {CELL_TYPE == "FDRE"}] { set mod_name [get_property NAME $mod] set reg_list [get_pins -hierarchical -filter {DIRECTION == "IN"} -of_objects [get_cells -hierarchical -filter {CELL_TYPE == "FDRE"}]] puts "Module: $mod_name" puts "Registers: $reg_list" }
+set hierarchy_groups [dict create]
+# Loop through each leaf cell in the design hierarchy
+foreach cell [get_cells -hierarchical -filter {IS_PRIMITIVE}] {
+    # Get the full hierarchical name of the cell
+    set cell_hierarchy [get_property FULLNAME $cell]
+    
+    # Extract the parent hierarchy (up to the immediate parent)
+    set parent_hierarchy [file dirname $cell_hierarchy]
+
+    # Add the cell to the group for its parent hierarchy
+    if {[dict exists $hierarchy_groups $parent_hierarchy]} {
+        dict lappend hierarchy_groups $parent_hierarchy $cell_hierarchy
+    } else {
+        dict set hierarchy_groups $parent_hierarchy [list $cell_hierarchy]
+    }
+}
+# Print the grouped hierarchy
+foreach {parent cells} [dict get $hierarchy_groups] {
+    puts "Hierarchy: $parent"
+    puts "Cells: $cells"
+    puts ""
+}
+# Set the output file path
+set fileId [open "cell_list.txt" w]
+# Write header to the file
+puts $fileId "Cell Name\tCell Type\tHierarchy"
+# Loop through each cell in the design
+foreach cell [get_cells -hierarchical] {
+    # Get cell name, type, and full hierarchical path
+    set cell_name [get_property NAME $cell]
+    set cell_type [get_property CELL_TYPE $cell]
+    set cell_hierarchy [get_property FULLNAME $cell]
+    
+    # If cell type is not defined, set it to "N/A"
+    if {$cell_type eq ""} {
+        set cell_type "N/A"
+    }
+
+    # Write cell information to the file
+    puts $fileId "$cell_name\t$cell_type\t$cell_hierarchy"
+}
+# Close the file
+close $fileId
+# Confirm export
+puts "Cell list exported to cell_list.txt"

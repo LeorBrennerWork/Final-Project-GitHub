@@ -1,0 +1,438 @@
+
+*** Running vivado
+    with args -log simon_cipher_top_encrypt_decrypt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source simon_cipher_top_encrypt_decrypt.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source simon_cipher_top_encrypt_decrypt.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 565.418 ; gain = 181.551
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.srcs/utils_1/imports/synth_1/simon_cipher_top_encrypt_decrypt.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.srcs/utils_1/imports/synth_1/simon_cipher_top_encrypt_decrypt.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top simon_cipher_top_encrypt_decrypt -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 36588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1401.020 ; gain = 439.914
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'simon_cipher_top_encrypt_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:16]
+INFO: [Synth 8-3491] module 'get_data' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/get_data.vhd:5' bound to instance 'full_rxd_do' of component 'get_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'get_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/get_data.vhd:16]
+INFO: [Synth 8-3491] module 'uart_rxd' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_rxd_combine.vhd:5' bound to instance 'rxd_do' of component 'uart_rxd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/get_data.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'uart_rxd' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_rxd_combine.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'uart_rxd' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_rxd_combine.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'get_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/get_data.vhd:16]
+INFO: [Synth 8-3491] module 'send_data' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/send_data.vhd:6' bound to instance 'full_txd_do' of component 'send_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'send_data' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/send_data.vhd:17]
+INFO: [Synth 8-3491] module 'uart_txd_combine' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_txd_combine.vhd:6' bound to instance 'txd_do' of component 'uart_txd_combine' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/send_data.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'uart_txd_combine' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_txd_combine.vhd:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_txd_combine.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'uart_txd_combine' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/uart_txd_combine.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'send_data' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/send_data.vhd:17]
+INFO: [Synth 8-3491] module 'simon_cipher_hierarchy_encrypt' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:8' bound to instance 'encrypt' of component 'simon_cipher_hierarchy_encrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'simon_cipher_hierarchy_encrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:23]
+INFO: [Synth 8-3491] module 'key_schedule_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:7' bound to instance 'key_schedule_create' of component 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:17]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_4' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'sub_key_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:19]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_5' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:86]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_6' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:95]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_7' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:104]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_8' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:113]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_9' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:122]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_10' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:131]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_11' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:140]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_12' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:149]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_13' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:158]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_14' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:167]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_15' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:176]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_16' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:185]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_17' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:194]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_18' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:203]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_19' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:212]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_20' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:221]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_21' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:230]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_22' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:239]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_23' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:248]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_24' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:257]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_25' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:266]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_26' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:275]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_27' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:284]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_28' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:293]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_29' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:302]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_30' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:311]
+INFO: [Synth 8-3491] module 'sub_key_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/sub_key_generator.vhd:6' bound to instance 'sub_key_generator_31' of component 'sub_key_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:320]
+INFO: [Synth 8-256] done synthesizing module 'key_schedule_generator' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:17]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_1' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'round' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:19]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_2' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:178]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_3' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:187]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_4' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:196]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_5' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:205]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_6' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:214]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_7' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:223]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_8' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:232]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_9' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:241]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_10' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:250]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_11' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:259]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_12' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:268]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_13' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:277]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_14' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:286]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_15' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:295]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_16' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:304]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_17' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:313]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_18' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:322]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_19' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:331]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_20' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:340]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_21' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:349]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_22' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:358]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_23' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:367]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_24' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:376]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_25' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:385]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_26' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:394]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_27' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:403]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_28' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:412]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_29' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:421]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_30' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:430]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_31' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:439]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_32' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:448]
+INFO: [Synth 8-256] done synthesizing module 'simon_cipher_hierarchy_encrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Encrypt.vhd:23]
+INFO: [Synth 8-3491] module 'simon_cipher_hierarchy_decrypt' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:8' bound to instance 'decrypt' of component 'simon_cipher_hierarchy_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'simon_cipher_hierarchy_decrypt' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:23]
+INFO: [Synth 8-3491] module 'key_schedule_generator' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:7' bound to instance 'key_schedule_create' of component 'key_schedule_generator' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:162]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_1' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:169]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_2' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:178]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_3' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:187]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_4' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:196]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_5' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:205]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_6' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:214]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_7' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:223]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_8' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:232]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_9' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:241]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_10' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:250]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_11' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:259]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_12' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:268]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_13' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:277]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_14' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:286]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_15' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:295]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_16' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:304]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_17' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:313]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_18' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:322]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_19' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:331]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_20' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:340]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_21' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:349]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_22' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:358]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_23' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:367]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_24' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:376]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_25' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:385]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_26' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:394]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_27' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:403]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_28' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:412]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_29' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:421]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_30' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:430]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_31' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:439]
+INFO: [Synth 8-3491] module 'round' declared at 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/round.vhd:6' bound to instance 'round_32' of component 'round' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:448]
+INFO: [Common 17-14] Message 'Synth 8-3491' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'simon_cipher_hierarchy_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/Simon_Cipher_Hierarchy_Decrypt.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'seven_segment' [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/seven_segment.vhd:15]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/seven_segment.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'seven_segment' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/seven_segment.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'simon_cipher_top_encrypt_decrypt' (0#1) [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:16]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[0] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[1] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[2] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[3] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[4] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[5] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[6] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[7] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[8] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[9] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[10] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[11] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[12] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[13] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[14] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[15] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[16] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[17] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[18] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[19] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[20] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[21] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[22] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[23] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[24] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[25] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[26] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[27] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[28] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[29] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element KEY_SCHDL_reg[30] was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/key_schedule_generator.vhd:70]
+WARNING: [Synth 8-6014] Unused sequential element load_plntxt_internal_reg was removed.  [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/simon_cipher_top_encrypt_decrypt.vhd:142]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1519.793 ; gain = 558.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1519.793 ; gain = 558.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1519.793 ; gain = 558.688
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1519.793 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/full_cipher_uart.xdc]
+Finished Parsing XDC File [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/full_cipher_uart.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/full_cipher_uart.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/simon_cipher_top_encrypt_decrypt_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/simon_cipher_top_encrypt_decrypt_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1621.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1621.688 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'my_rxd_state_machine_reg' in module 'uart_rxd'
+INFO: [Synth 8-802] inferred FSM for state register 'my_txd_state_machine_reg' in module 'uart_txd_combine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                   start |                              001 |                              001
+                 receive |                              010 |                              010
+               finish_rx |                              011 |                              011
+                  rdy_tx |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'my_rxd_state_machine_reg' using encoding 'sequential' in module 'uart_rxd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                   start |                             0010 |                               01
+                transmit |                             0100 |                               10
+                  finish |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'my_txd_state_machine_reg' using encoding 'one-hot' in module 'uart_txd_combine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
++---XORs : 
+	   2 Input     16 Bit         XORs := 56    
+	   5 Input     16 Bit         XORs := 56    
+	   4 Input     16 Bit         XORs := 64    
++---Registers : 
+	              104 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 436   
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input  104 Bit        Muxes := 3     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   5 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 28    
+	   5 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'full_rxd_do/data_reg' and it is trimmed from '104' to '97' bits. [C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt/get_data.vhd:92]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    27|
+|3     |LUT1   |     7|
+|4     |LUT2   |   937|
+|5     |LUT3   |   940|
+|6     |LUT4   |    33|
+|7     |LUT5   |  1050|
+|8     |LUT6   |   107|
+|9     |FDRE   |  7535|
+|10    |FDSE   |     1|
+|11    |IBUF   |     3|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 1621.688 ; gain = 558.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1621.688 ; gain = 660.582
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 1621.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1621.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: 9d45e0f7
+INFO: [Common 17-83] Releasing license: Synthesis
+150 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1621.688 ; gain = 1053.320
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1621.688 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.runs/synth_1/simon_cipher_top_encrypt_decrypt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file simon_cipher_top_encrypt_decrypt_utilization_synth.rpt -pb simon_cipher_top_encrypt_decrypt_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  6 23:28:50 2024...

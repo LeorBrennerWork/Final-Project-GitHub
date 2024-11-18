@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Sep 24 04:57:37 2024
+# Process ID: 51108
+# Current directory: C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20760 C:\Users\USER\Documents\Leor Brenner\Final_Project\full_encrypt_decrypt_vivado\full_encrypt_decrypt_vivado.xpr
+# Log file: C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/vivado.log
+# Journal file: C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado\vivado.jou
+# Running On: Leor-PC-5530, OS: Windows, CPU Frequency: 2112 MHz, CPU Physical cores: 12, Host memory: 16849 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/USER/Documents/Leor Brenner/Final_Project/full_encrypt_decrypt_vivado/full_encrypt_decrypt_vivado.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+open_run impl_1
+report_utilization -hierarchical -hierarchical_depth 2
+report_utilization -hierarchical -hierarchical_depth 3
+report_utilization -hierarchical -hierarchical_depth 4
+report_utilization -file dff_utilization_report.rpt
+get_cells -hierarchical -fil
+get_cells -hierarchical -filter {PRIMITIVE_TYPE == FD}
+get_cells -hierarchical
+get_cells -hierarchical ff_report.rpt
+get_cells -hierarchical -file ff_report.rpt
+set cells_list [get_cells -hierarchical] write_file -file_name cells_list.txt $cells_list
+set [get_cells -hierarchical] write_file -file_name cells_list.txt $cells_list
+set cells_list [get_cells -hierarchical] write_file -file_name cells_list.txt
+cells_list
+get_cells -hierarchical
+set cells_list [get_cells -hierarchical]
+puts $cells_list
+write_file -file_name cells_list.txt $cells_list
+set cells_list [get_cells -hierarchical] write_file -file_name cells_list.txt $cells_list
+set file_id [open "cells_list.txt" w]
+foreach cell $cells_list {puts $file_id $cell }
+close $file_id
+array set register_groups{}
+foreach cell $cells_list { set cell_name [get_property NAME $cell] if {[regexp {([a-zA-Z_]+)([0-9]+)$} $cell_name full_match base_name index]}{lappend register_groups($base_name) $cell_name}}
+foreach cell $cells_list { set cell_name [get_property NAME $cell] if {[regexp {([a-zA-Z_]+) ([0-9]+)$} $cell_name full_match base_name index]} {lappend register_groups($base_name) $cell_name}}
+array set register_groups {}
+foreach cell $cells_list { set cell_name [get_property NAME $cell] if {[regexp {([a-zA-Z_]+) ([0-9]+)$} $cell_name full_match base_name index]} {lappend register_groups($base_name) $cell_name}}
+set cells_list [get_cells -hierarchical -filter {PRIMITIVE_TYPE =~ FD.*]
+set cells_list [get_cells -hierarchical -filter {PRIMITIVE_TYPE =~ FD.*}]
+set cells_list [get_cells -hierarchical -filter {PRIMITIVE_TYPE == FD}]
+set cells_list [get_cells -hierarchical -filter {PRIMITIVE_TYPE == FDRE}]
+set cells_list [get_cells -hierarchical -filter {PRIMITIVE_TYPE =~ FDRE.*}]
+set cells_list [get_cells -hierarchical -filter {PRIMITIVE_TYPE == FDRE.*}]
+report_cells -filter {PRIMITIVE_TYPE =~ *} -name cell_report
+get_cells -hierarchical
+set ff_cells [get_cells -hierarchical -filter {PRIMITIVE_TYPE =~ FD.*}]
+set ff_cells [get_cells -hierarchical -filter {PRIMITIVE_TYPE =~ reg}]
+report_utilization -hierarchical -hierarchical_depth 4
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -hierarchical
+report_utilization -hierarchical -hierarchical_depth 1
+report_utilization -hierarchical -hierarchical_depth 0
+report_utilization
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
+open_run synth_1 -name synth_1
